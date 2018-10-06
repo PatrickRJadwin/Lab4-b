@@ -1,0 +1,13 @@
+@color-base: #00CC00;
+@color-offset: #0000AA;
+
+.class1 {
+ background-color: @color-base;
+}
+.class2 {
+ background-color: #fff;
+ color: @color-base + @color-offset; //change value to non-zero to see effect
+}
+.class3 {
+ border: 1px solid @color-base;
+}

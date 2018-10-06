@@ -1,0 +1,17 @@
+/* 
+Use with mixin_example1.html
+
+Based on official less documentation: lesscss.org */
+
+/* This example shows a simple way to use Less mixins */
+
+.my-mixin() {
+  color: white;
+}
+.my-other-mixin() {
+  background: blue;
+}
+.class1 {
+  .my-mixin;
+  .my-other-mixin;
+}

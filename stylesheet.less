@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@slider-color: rgba(82, 35, 135, .8); 
+@color-gray: #888888 + #111111;
+@bg: rgb(255,255,255);
+@font-size: 60px;
+@slider-width: 100%;
+@thumb: 20px;
+
+
+.slidecontainer
+{
+    width: @slider-width;
+}
+.transition (@transition) 
+{
+    -webkit-transition: @transition;
+            transition: opacity @transition;
+
+}
+.appearence (@none) 
+{
+    -webkit-appearance: @none;
+            appearance: @none;
+}
+.slider-params (@opacity; @outline; @background;) 
+{
+    opacity: @opacity;
+    outline: @outline;
+    background: @background;
+}
+.slider
+{
+    width: @slider-width * .35;
+    height: 8px;
+
+    .transition(.2s);
+
+    .slider-params(.7, none, @color-gray);
+
+    .appearence(none);
+}
+.slider:hover
+{
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb
+{
+    width: @thumb;
+    height: @thumb;
+    
+    cursor: pointer;
+
+    background: @slider-color;
+
+    .appearence(none)
+}
+
+.slider::-moz-range-thumb
+{
+    width: @thumb;
+    height: @thumb;
+
+    cursor: pointer;
+
+    background: @slider-color;
+}
+
+.Center-Box {
+    width: 60%;
+    background: fade(@bg, 65%);
+}
+.Ford-Image {
+    height: 20%;
+    width: 50%;
+    padding-bottom: 3%; 
+    padding-top: 2%;
+}
+h1
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: @font-size;
+}
+
+h3
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: @font-size - 40;
+}
+
+body
+{
+    background-image: url(https://i.pinimg.com/originals/cc/a7/51/cca751089a1be32e84ddf8e7e3381140.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

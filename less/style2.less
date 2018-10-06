@@ -1,0 +1,26 @@
+/* Based on an example from tutorial (modified):
+http://webdesign.tutsplus.com/tutorials/get-into-less-the-programmable-stylesheet-language--webdesign-5216
+*/
+
+/* One great thing about variables is that
+   you can choose good (clear and helpful to 
+   the reader) variable names */
+@color-orange: #ff9900;
+@color-gray_light: #cccccc; 
+@color-black_dark: #333333;  
+@color-black_medium: #454545;  
+@color-blue: #0000ff;
+@color-red: #ee0905;
+ 
+body { 
+    background: @color-black_dark;
+    color: @color-black_medium;
+    //color: @color-blue;
+}
+a {
+    color:@color-orange;
+}
+h1, h2, h3, h4, h5, h6 {
+    //color: @color-black_dark;
+    color: @color-red;
+}

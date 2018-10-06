@@ -1,0 +1,32 @@
+/* based on an example from tutorial:
+   http://webdesign.tutsplus.com/tutorials/get-into-less-the-programmable-stylesheet-language--webdesign-5216
+
+This file contains an error -- button's @color variable is not
+defined in that scope. 
+*/
+
+body {
+    @color: #ff9900;
+    color:@color;
+}
+
+/* note that the scope error on this line is not reported.
+   But even though the lines below are correct, they will not
+   be applied (compilation to css fails */
+button { 
+    background-color: @color;
+}
+
+@color-base: #FF0000;
+
+.class1 {
+ background-color: @color-base;
+}
+.class2 {
+ background-color: #fff;
+ color: @color-base;
+}
+.class3 {
+ border: 1px solid @color-base;
+}
+

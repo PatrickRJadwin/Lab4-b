@@ -1,0 +1,20 @@
+/* based on an example in tutorial:
+   http://webdesign.tutsplus.com/tutorials/get-into-less-the-programmable-stylesheet-language--webdesign-5216
+*/
+
+//@color: #d24444;  //red
+//@color: #0000ff; //blue
+//@color: #11dd11; //green
+@color: #faa51a; //yellow-ish
+button { 
+    //explorer/edge browser
+    //background: -webkit-gradient(linear, left top, left bottom, from(@color + #151515), to(@color - #151515));
+
+    //firefox, chrome, other browsers
+    background: -moz-linear-gradient(top,  @color + #151515,  @color - #151515);
+
+    //note:  can leave both lines uncommented, browser will pick correct line
+
+    border:2px solid;
+    padding:5px 12px;
+}

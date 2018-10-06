@@ -1,0 +1,15 @@
+/* based on an example in tutorial:
+   http://webdesign.tutsplus.com/tutorials/get-into-less-the-programmable-stylesheet-language--webdesign-5216
+*/
+
+@color-button: #d24444;  //red
+//@color-button: #1111dd; //blue
+//@color-button: #11dd11; //green
+button {  
+    color:#fff;
+    background:@color-button;   
+    // note that the following line will always give us a
+    // darker border based on the base color (no matter what it is)
+    border:10px solid @color-button - #222;
+    padding:5px 12px;
+}

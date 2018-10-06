@@ -1,0 +1,28 @@
+/* 
+Use with mixin_example3.html
+
+Based on official less documentation: lesscss.org 
+
+   This example illustrates a very "function-like" way
+   to use Less mixins. Here, we compute and return the
+   average of two input numbers.
+*/
+
+
+.average(@x, @y) {
+  @average: ((@x + @y) / 2);
+}
+
+/* change the values below and refresh html page to see 
+   that this is working */
+div {
+  .average(20px, 40px); // call the "function" (mixin)
+  padding: @average;    // use its return value
+  // can't call .average() here with non-px units... it's weird, but that's how it works.
+}
+
+.class1{
+  .average(#ff0000, #0000ff); //same function, but inputs are rgb hex color vals
+  color: @average;
+}
+

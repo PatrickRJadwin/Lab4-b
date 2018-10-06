@@ -1,0 +1,32 @@
+/* 
+Use with mixin_example2.html
+
+Based on official less documentation: lesscss.org */
+
+/* This example demonstrates parametric mixins, in Less
+   Parametric mixins are mixins that take parameters (inputs).
+   **A good way to understand these is to think of them as functions.**
+*/
+
+/* note that you are allowed to overload mixins (same name, diff. parameters */
+.mixin(@color) {
+  color: @color;
+}
+.mixin(@color; @padding) {
+  color: @color;
+  padding: @padding;
+}
+
+/* below, "@arguments" is a special/reserved keyword.
+   it will output all parameter values at once. */
+.gray_border(@width: 1px, @type: solid, @color: #bbb){
+    border:@arguments;
+}
+div {
+    .gray_border(2px, dashed);
+    .mixin(#aa0010);
+}
+
+.class1 {
+    .mixin(#0000aa, 10px);
+}

@@ -1,0 +1,20 @@
+/* Use with color_functions1.html */
+
+/* this example demonstrates the use of common 
+   Less color functions */
+
+/* functions: lighten, darken, saturate, desaturate,
+   fade in, fade out and spin colors. */
+
+//@color: #ef0059;
+@color: #00ef34;
+
+.class1 {
+ background-color: @color;
+}
+.class2 {
+ background: desaturate(@color, 10%);
+}
+.class3 {
+ background: desaturate(@color, 30%);
+}

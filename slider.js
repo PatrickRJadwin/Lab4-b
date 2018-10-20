@@ -90,6 +90,14 @@ slider7.oninput = function() {
 var val = false;
 button.onclick = function() {
   for (var i = 0; i < isSlid.length; i++) {
+    if (textarea.value === "") {
+      val = false;
+      window.alert('You did not enter a name');
+      window.close();
+      break;
+    } else {
+      val = true;
+    }
     if (isSlid[i] == false) {
       val = false;
       window.alert('One or more sliders has not been modified. \n please select a value greater than 0');

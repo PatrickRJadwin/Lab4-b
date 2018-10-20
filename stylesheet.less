@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-@slider-color: rgba(82, 35, 135, .8); 
+@slider-color: rgba(0, 64, 255, .8);
 @color-gray: #888888 + #111111;
 @bg: rgb(255,255,255);
 @font-size: 60px;
@@ -12,18 +12,18 @@
 {
     width: @slider-width;
 }
-.transition (@transition) 
+.transition (@transition)
 {
     -webkit-transition: @transition;
             transition: opacity @transition;
 
 }
-.appearence (@none) 
+.appearence (@none)
 {
     -webkit-appearance: @none;
             appearance: @none;
 }
-.slider-params (@opacity; @outline; @background;) 
+.slider-params (@opacity; @outline; @background;)
 {
     opacity: @opacity;
     outline: @outline;
@@ -49,7 +49,7 @@
 {
     width: @thumb;
     height: @thumb;
-    
+
     cursor: pointer;
 
     background: @slider-color;
@@ -74,7 +74,7 @@
 .Ford-Image {
     height: 20%;
     width: 50%;
-    padding-bottom: 3%; 
+    padding-bottom: 3%;
     padding-top: 2%;
 }
 h1

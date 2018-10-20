@@ -6,7 +6,7 @@
   <script src="less/less.js" type="text/javascript"></script>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/full-width-pics.css" rel="stylesheet">
@@ -47,75 +47,82 @@
       </h1>
       <hr>
       <h3>
-        Rate your sales associate (0-10)
+        Please enter your name
       </h3>
       <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="myRange">
+        <textarea rows="1" cols="30" id="textarea"></textarea>
+      </div>
+      <hr>
+      <h3>
+        Rate your sales associate (1-10)
+      </h3>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange">
         <span id="demo"></span>
       </div>
       <br />
       <hr>
       <h3>
-        Rate our facility (0-10)
+        Rate our facility (1-10)
       </h3>
       <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="myRange2">
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange2">
         <span id="demo2"></span>
       </div>
       <br />
       <hr>
       <h3>
-        Rate our financing (if applicable) (0-10)
+        Rate our financing (1-10)
       </h3>
       <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="myRange3">
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange3">
         <span id="demo3"></span>
       </div>
       <br />
       <hr>
       <h3>
-        Rate our website (if used) (0-10)
+        Rate our website (1-10)
       </h3>
       <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="myRange4">
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange4">
         <span id="demo4"></span>
       </div>
       <br />
       <hr>
       <h3>
-        Rate our selection of vehicles (0-10)
+        Rate our selection of vehicles (1-10)
       </h3>
       <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="myRange5">
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange5">
         <span id="demo5"></span>
       </div>
       <br />
       <hr>
       <h3>
-        Rate your test drive (0-10)
+        Rate your test drive (1-10)
       </h3>
       <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="myRange6">
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange6">
         <span id="demo6"></span>
       </div>
       <br />
       <hr>
       <h3>
-        How likely are you to recommend us to a friend or coworker? (0-10)
+        How likely are you to recommend us to a friend or coworker? (1-10)
       </h3>
       <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="myRange7">
+        <input type="range" min="0" max="10" value="0" class="slider" id="myRange7">
         <span id="demo7"></span>
       </div>
       <br />
       <hr>
       <h3>
-        Comments? Suggestions?
+        Comments? Suggestions? (optional)
       </h3>
-      <textarea rows="4" cols="50"></textarea>
+      <textarea rows="4" cols="50" id="textarea2"></textarea>
       <br />
       <br />
-      <button type="button">Submit</button>
+      <button type="button" id="button">Submit</button>
       <br />
       <br />
       <script src="slider.js"></script>
